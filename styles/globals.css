@@ -1,10 +1,60 @@
 @tailwind base;
 @tailwind components;
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroyBold/font.woff2") format("woff2"),
+    url("../public/fonts/GilroyBold/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroyExtraBold/font.woff2") format("woff2"),
+    url("../public/fonts/GilroyExtraBold/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroySemiBold/font.woff2") format("woff2"),
+    url("../public/fonts/GilroySemiBold/font.woff") format("woff");
+    font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroyLight/font.woff2") format("woff2"),
+    url("../public/fonts/GilroyLight/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroyRegular/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../public/fonts/GilroyMedium/font.woff2") format("woff2"),
+    url("../public/fonts/GilroyMedium/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Recoleta";
+  src: url("../public/fonts/RecoletaBlack/font.woff2") format("woff2"),
+    url("../public/fonts/RecoletaBlack/font.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+}
 
 html, body, #__next {
   width: 100%;
   height: 100%;
+  font-family: Gilroy;
 }
 
 nav ul{
@@ -22,11 +72,29 @@ footer {
   place-items: center;
 }
 
+.landing {
+  height: calc(100vh - 88px);
+}
+
 .heading {
   display: grid;
   place-items: center;
   font-size: 4.5rem;
   line-height: 1;
+  text-align: center;
+}
+
+.heading h1 {
+  font-family: Recoleta;
+  padding-bottom: 1rem;
+}
+
+.main-subheading {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #8f8f8f;
 }
 
 .page-wrapper {
