@@ -16,8 +16,13 @@ export default function Home() {
         />
       </Head>
       <main>
-        <div className="heading">
-          <h1>Brandon Leichty</h1>
+        <div className="heading landing">
+          <div>
+            <h1>Brandon Leichty</h1>
+            <p className="main-subheading">
+              Full Stack JavaScript developer and<br/>designer from Minneapolis, MN.
+            </p>
+          </div>
         </div>
       </main>
     </>
