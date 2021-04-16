@@ -20,7 +20,7 @@ export default function Home() {
           <div>
             <h1>Brandon Leichty</h1>
             <p className="main-subheading">
-              Full Stack JavaScript developer and<br/>designer from Minneapolis, MN.
+              Full Stack JavaScript developer and<br/><span><a href="https://www.youtube.com/watch?v=jAaxVuz0uKk" target="_blank" rel="noopener noreferrer">designer</a></span> from Minneapolis, MN.
             </p>
           </div>
         </div>
