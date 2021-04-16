@@ -9,6 +9,10 @@ module.exports = {
         "dark-navy": "#051525",
         "baby-blue": "#03cffe",
         "white": "#fff"
+      },
+      fontFamily: {
+        Recoleta: ["Recoleta"],
+        Gilroy: ["Gilroy"]
       }
     },
   },
