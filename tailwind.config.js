@@ -8,7 +8,9 @@ module.exports = {
         "dark-green": "#212505",
         "dark-navy": "#051525",
         "baby-blue": "#03cffe",
-        "white": "#fff"
+        "white": "#fff",
+        "gray":"#8f8f8f",
+        "light-gray": "#f7f7f7"
       },
       fontFamily: {
         Recoleta: ["Recoleta"],
