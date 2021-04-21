@@ -1,9 +1,10 @@
+import Switch from "../components/Switch";
 import Link from "next/link";
 import React from "react";
 
 function Navigation() {
   return (
-    <nav className="navigation-wrapper">
+    <nav className="navigation-wrapper inline-flex">
       <ul>
         <li>
           <Link href="/">
@@ -31,6 +32,7 @@ function Navigation() {
           </Link>
         </li>
       </ul>
+      <Switch className="theme-switch"/>
     </nav>
   );
 }
