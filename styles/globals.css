@@ -70,7 +70,7 @@ body {
 }
 
 nav ul {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   display: flex;
   font-weight: 600;
   flex-wrap: wrap;
@@ -140,11 +140,15 @@ section {
   text-align: left;
 }
 
-.about h1 {
+.about h1, .resources h1 {
   padding-bottom: 4rem;
   padding-top: 8rem;
 }
 
+.resource-section-heading h3 {
+  font-weight: bold;
+  color: #03cffe;
+}
 /* footer {
   padding-top: 8vmax;
   padding-bottom: 8vmax;
