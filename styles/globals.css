@@ -81,7 +81,7 @@ nav ul li a {
   padding: 10px;
 }
 
-nav ul li {
+nav ul li, .theme-toggle {
   margin: 10px;
 }
 
