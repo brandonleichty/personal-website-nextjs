@@ -10,7 +10,9 @@ module.exports = {
         "baby-blue": "#03cffe",
         "white": "#fff",
         "gray":"#8f8f8f",
-        "light-gray": "#f7f7f7"
+        "light-gray": "#f7f7f7",
+        "white-smoke": "#f7f5f4",
+        "charcoal": "#3e3f3f"
       },
       fontFamily: {
         Recoleta: ["Recoleta"],
