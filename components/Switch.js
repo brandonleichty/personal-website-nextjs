@@ -3,8 +3,12 @@ import { Switch } from "@headlessui/react";
 import { useTheme } from "next-themes";
 
 export default function Example() {
-  const [enabled, setEnabled] = useState();
   const { theme, setTheme } = useTheme();
+  const [enabled, setEnabled] = useState();
+
+  useEffect(() => {
+    setEnabled(theme === "dark" ? false : true)
+  }, [])
 
   return (
     <Switch checked={enabled} onChange={() => {setEnabled(!enabled); setTheme(theme === "dark" ? "light" : "dark")}} >
