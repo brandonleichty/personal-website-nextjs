@@ -8,15 +8,6 @@ export default function About() {
     <>
       <Head>
         <title>Brandon Leichty</title>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-              document.documentElement.classList.add('dark');
-            } else {
-              document.documentElement.classList.remove('dark');
-            }`,
-          }}
-        />
       </Head>
       <main className="max-w-3xl mx-auto">
         <div className="heading about">
