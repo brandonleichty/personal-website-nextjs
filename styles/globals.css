@@ -19,7 +19,7 @@
   font-family: "Gilroy";
   src: url("../public/fonts/GilroySemiBold/font.woff2") format("woff2"),
     url("../public/fonts/GilroySemiBold/font.woff") format("woff");
-    font-style: normal;
+  font-style: normal;
   font-weight: 600;
 }
 @font-face {
@@ -58,7 +58,9 @@
   font-weight: 500;
 }
 
-html, body, #__next {
+html,
+body,
+#__next {
   width: 100%;
   height: 100%;
   font-family: Gilroy;
@@ -81,7 +83,8 @@ nav ul li a {
   padding: 10px;
 }
 
-nav ul li, .theme-toggle {
+nav ul li,
+.theme-toggle {
   margin: 10px;
 }
 
@@ -100,11 +103,11 @@ footer {
   height: calc(100vh - 115px);
 }
 
-.heading, img {
+.heading,
+img {
   display: grid;
   place-items: center;
   text-align: center;
-  
 }
 
 .heading h1 {
@@ -140,7 +143,8 @@ section {
   text-align: left;
 }
 
-.about h1, .resources h1 {
+.about h1,
+.resources h1 {
   padding-bottom: 4rem;
   padding-top: 8rem;
 }
@@ -170,7 +174,8 @@ section {
   padding: 5px;
 }
 
-nav, nav ul {
+nav,
+nav ul {
   width: 100%;
 }
 
@@ -187,20 +192,69 @@ nav, nav ul {
 
 .burger-nav-wrapper button {
   margin: 5px;
+  z-index: 1001;
 }
 
+.dark nav .burger .burger-lines,
+.dark nav .burger .burger-lines:after,
+.dark nav .burger .burger-lines:before {
+  background-color: #fff;
+}
 
- .dark nav .burger .burger-lines, 
- .dark nav .burger .burger-lines:after, 
- .dark nav .burger .burger-lines:before {
-    background-color:#fff;
-  }
-
-nav .burger .burger-lines, 
-nav .burger .burger-lines:after, 
+nav .burger .burger-lines,
+nav .burger .burger-lines:after,
 nav .burger .burger-lines:before {
   background-color: #3e3f3f;
 }
+
+.dark .overlay {
+  /* opacity: 0; */
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(17, 24, 39); /* Black fallback color */
+  background-color: rgba(17, 24, 39, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: opacity 500ms ease 0s;
+}
+
+.overlay {
+  /* opacity: 0; */
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /* Stay in place */
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: rgb(255, 255, 255); /* Black fallback color */
+  background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: opacity 500ms ease 0s;
+}
+
+
+
+.mobile-navigation-wrapper ul {
+  position: absolute;
+  left: 20px;
+  bottom: 100px;
+  width: 75%;
+  height: 75%;
+  z-index: 1002;
+  flex-direction: column;
+  display: flex;
+  font-size: 3rem;
+  transition: opacity 500ms ease 0s;
+}
+/* 
+button.overlay.active  {
+  opacity: 1;
+} */
 
 /* footer {
   padding-top: 8vmax;
