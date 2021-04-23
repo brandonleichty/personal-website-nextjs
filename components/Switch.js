@@ -1,17 +1,19 @@
 import { useState, useEffect } from "react";
 import { Switch } from "@headlessui/react";
 import { useTheme } from "next-themes";
+import useSound from 'use-sound';
 
 export default function Example() {
   const { theme, setTheme } = useTheme();
   const [enabled, setEnabled] = useState();
+  const [play] = useSound('/sounds/Whit.wav');
 
   useEffect(() => {
     setEnabled(theme === "dark" ? false : true)
   }, [])
 
   return (
-    <Switch checked={enabled} onChange={() => {setEnabled(!enabled); setTheme(theme === "dark" ? "light" : "dark")}} >
+    <Switch checked={enabled} onChange={() => {setEnabled(!enabled); setTheme(theme === "dark" ? "light" : "dark"); play()}} >
       {enabled ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
