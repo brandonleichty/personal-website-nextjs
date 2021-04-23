@@ -183,8 +183,6 @@ nav ul {
 .navigation-wrapper {
   justify-content: center;
   padding-top: 1rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
 }
 
 .burger-nav-wrapper {
@@ -211,44 +209,50 @@ nav .burger .burger-lines:before {
 .dark .overlay {
   /* opacity: 0; */
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100vh;
-  width: 100vw;
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  left: 0;
-  top: 0;
   background-color: rgb(17, 24, 39); /* Black fallback color */
   background-color: rgba(17, 24, 39, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.overlay.active {
+  z-index: 300;
+  opacity: 1;
   transition: opacity 500ms ease 0s;
-  backdrop-filter: blur(8px);
+}
+
+.mobile-navigation-wrapper ul.active {
+  pointer-events: auto;
+  z-index: 301;
+  opacity: 1;
+  transition: opacity 500ms ease 0s;
 }
 
 .overlay {
-  /* opacity: 0; */
+  opacity: 0;
   /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100vh;
   width: 100vw;
   position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
+  z-index: -100; /* Sit on top */
   left: 0;
   top: 0;
   background-color: rgb(255, 255, 255); /* Black fallback color */
   background-color: rgba(255, 255, 255, 0.9); /* Black w/opacity */
   overflow-x: hidden; /* Disable horizontal scroll */
   backdrop-filter: blur(8px);
-  transition: opacity 500ms ease 0s;
+  /* transition: opacity 500ms ease 0s; */
 }
 
 
 
 .mobile-navigation-wrapper ul {
+  pointer-events: none;
+  opacity: 0;
   position: absolute;
   left: 20px;
   bottom: 100px;
   width: 75%;
   height: 70%;
-  z-index: 1002;
+  z-index: -100;
   flex-direction: column;
   display: flex;
   font-size: 3rem;
@@ -256,32 +260,17 @@ nav .burger .burger-lines:before {
   /* transition: opacity 500ms ease 0s; */
 }
 
+
 @media (min-width: 640px) {
   .hero-image-wrapper {
     padding-top: 4rem;
   }
-
   .navigation-wrapper {
     padding-top: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
- }
-/* 
-button.overlay.active  {
-  opacity: 1;
-} */
-
-/* footer {
-  padding-top: 8vmax;
-  padding-bottom: 8vmax;
 }
 
-footer p {
-  max-width: 568px;
-  padding: 1rem 1rem 2rem 1rem;
-  font-size: 1.6rem;
-  text-align: center;
-  font-family: 'Recoleta';
-  font-weight: 500;
-} */
 
 @tailwind utilities;
