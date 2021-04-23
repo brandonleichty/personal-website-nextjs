@@ -10,6 +10,7 @@ export default function Home() {
 
       </Head>
       <main>
+        <section>
         <div className="heading landing">
           <div>
             <div className="hero-image-wrapper">
@@ -31,6 +32,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+        </section>
       </main>
     </>
   );
