@@ -85,7 +85,6 @@ nav ul li, .theme-toggle {
   margin: 10px;
 }
 
-header, 
 footer {
   padding: 2rem;
   display: grid;
@@ -149,17 +148,60 @@ section {
 .resource-section-heading h3 {
   font-weight: bold;
   color: #03cffe;
+  /* color: #4603fe; */
 }
 
 .hero-image-wrapper {
   display: grid;
   place-items: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .hero-image-wrapper img {
   border: solid 10px;
 }
+
+.tech-stack-icons {
+  margin: 0 auto;
+}
+
+.burger-nav-container {
+  padding: 5px;
+}
+
+nav, nav ul {
+  width: 100%;
+}
+
+.navigation-wrapper {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.burger-nav-wrapper {
+  justify-content: flex-end;
+}
+
+.burger-nav-wrapper button {
+  margin: 5px;
+}
+
+
+ .dark nav .burger .burger-lines, 
+ .dark nav .burger .burger-lines:after, 
+ .dark nav .burger .burger-lines:before {
+    background-color:#fff;
+  }
+
+nav .burger .burger-lines, 
+nav .burger .burger-lines:after, 
+nav .burger .burger-lines:before {
+  background-color: #3e3f3f;
+}
+
 /* footer {
   padding-top: 8vmax;
   padding-bottom: 8vmax;
