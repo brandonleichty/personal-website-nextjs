@@ -164,6 +164,7 @@ section {
 
 .hero-image-wrapper img {
   border: solid 10px;
+  z-index: 200;
 }
 
 .tech-stack-icons {
