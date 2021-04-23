@@ -14,7 +14,7 @@ export default function Home() {
         <div className="heading landing">
           <div>
             <div className="hero-image-wrapper">
-              <img src="images/brandon.png" className="rounded-full	border-white border-solid w-60 h-60"></img>
+              <img src="images/brandon.png" className="rounded-full	border-white border-solid w-48 h-48 sm:w-60 sm:h-60"></img>
             </div>
             <h1>Brandon Leichty</h1>
             <p className="main-subheading">

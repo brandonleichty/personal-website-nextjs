@@ -159,7 +159,7 @@ section {
   display: grid;
   place-items: center;
   padding-bottom: 2rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .hero-image-wrapper img {
@@ -181,9 +181,7 @@ nav ul {
 
 .navigation-wrapper {
   justify-content: center;
-  padding-top: 2rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .burger-nav-wrapper {
@@ -251,6 +249,16 @@ nav .burger .burger-lines:before {
   font-size: 3rem;
   transition: opacity 500ms ease 0s;
 }
+
+@media (min-width: 640px) {
+  .hero-image-wrapper {
+    padding-top: 4rem;
+  }
+
+  .navigation-wrapper {
+    padding-top: 2rem;
+  }
+ }
 /* 
 button.overlay.active  {
   opacity: 1;
