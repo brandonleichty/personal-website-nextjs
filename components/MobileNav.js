@@ -3,10 +3,11 @@ import Switch from "../components/Switch";
 import { useState } from "react";
 import Burger from "@animated-burgers/burger-squeeze";
 import "@animated-burgers/burger-squeeze/dist/styles.css";
+import AudioToggle from '../components/AudioToggle'
 
 import React from "react";
 
-function MobileNav() {
+function MobileNav({isMuted, setIsMuted}) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -47,7 +48,10 @@ function MobileNav() {
             </Link>
           </li>
           <li>
-            <Switch className="theme-switch" />
+            <div>
+            <Switch className="theme-switch" isMuted={isMuted}/>
+            <AudioToggle setIsMuted={setIsMuted} isMuted={isMuted}/>
+            </div>
           </li>
         </ul>
       </div>

@@ -84,7 +84,8 @@ nav ul li a {
 }
 
 nav ul li,
-.theme-toggle {
+.theme-toggle,
+.audio-toggle {
   margin: 10px;
 }
 
