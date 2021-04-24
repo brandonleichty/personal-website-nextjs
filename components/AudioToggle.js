@@ -1,7 +1,11 @@
 import { useState } from "react";
 import { Switch } from "@headlessui/react";
+import useSound from "use-sound";
+
 
 export default function AudioToggle({ isMuted, setIsMuted }) {
+  const [playSosumi] = useSound("/sounds/Sosumi.wav");
+  const [playSingleClick] = useSound("/sounds/SingleClick.wav");
   // const [enabled, setEnabled] = useState();
 
   return (
@@ -10,6 +14,7 @@ export default function AudioToggle({ isMuted, setIsMuted }) {
       onChange={() => {
         // setEnabled(!enabled);
         setIsMuted(!isMuted);
+        {isMuted ? playSingleClick() : playSosumi()}
       }}
     >
       {isMuted ? (
