@@ -157,11 +157,13 @@ section {
 }
 
 .hero-image-wrapper {
-  padding-bottom: 32px;
-  padding-top: 32px;
+  display: grid;
+  place-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
-.hero-image-wrapper {
+.hero-image-wrapper img {
   border: solid 10px;
   z-index: 200;
 }
@@ -241,19 +243,6 @@ nav .burger .burger-lines:before {
   /* transition: opacity 500ms ease 0s; */
 }
 
-.sun-moon, .audio {
-  position: absolute;
-  top: 44px;
-}
-
-.sun-moon {
-  right: 65px
-}
-
-.audio {
-  right: 25px;
-}
-
 
 
 .mobile-navigation-wrapper ul {
@@ -284,5 +273,17 @@ nav .burger .burger-lines:before {
   }
 }
 
+.sun-moon, .audio {
+  position: absolute;
+  top: 44px;
+}
+
+.sun-moon {
+  right: 65px
+}
+
+.audio {
+  right: 25px;
+}
 
 @tailwind utilities;
