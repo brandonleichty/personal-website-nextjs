@@ -25,7 +25,7 @@ export default function Home() {
                 {/* <img onClick={() => shootConfetti()} src="images/brandon-min.png" className="rounded-full	border-white border-solid w-48 h-48 sm:w-60 sm:h-60"></img> */}
 
                 <Image
-                  src={"/images/brandon-min.png"}
+                  src={"/images/brandonMin.png"}
                   alt="Picture of Brandon"
                   priority={true}
                   layout="fill" // required
