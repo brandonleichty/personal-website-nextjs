@@ -157,11 +157,15 @@ section {
 }
 
 .hero-image-wrapper {
+  display: grid;
+  place-items: center;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.hero-image-wrapper img {
   border: solid 10px;
   z-index: 200;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  
 }
 
 .tech-stack-icons {
@@ -260,7 +264,7 @@ nav .burger .burger-lines:before {
 
 @media (min-width: 640px) {
   .hero-image-wrapper {
-    margin-top: 4rem;
+    padding-top: 4rem;
   }
   .navigation-wrapper {
     padding-top: 2rem;
