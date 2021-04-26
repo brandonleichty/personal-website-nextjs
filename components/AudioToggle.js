@@ -11,6 +11,7 @@ export default function AudioToggle({ isMuted, setIsMuted }) {
   return (
     <Switch
       checked={isMuted}
+      className="audio"
       onChange={() => {
         // setEnabled(!enabled);
         setIsMuted(!isMuted);

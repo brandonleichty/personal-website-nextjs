@@ -157,13 +157,11 @@ section {
 }
 
 .hero-image-wrapper {
-  display: grid;
-  place-items: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
-.hero-image-wrapper img {
+.hero-image-wrapper {
   border: solid 10px;
   z-index: 200;
 }
@@ -241,6 +239,19 @@ nav .burger .burger-lines:before {
   overflow-x: hidden; /* Disable horizontal scroll */
   backdrop-filter: blur(8px);
   /* transition: opacity 500ms ease 0s; */
+}
+
+.sun-moon, .audio {
+  position: absolute;
+  top: 44px;
+}
+
+.sun-moon {
+  right: 65px
+}
+
+.audio {
+  right: 25px;
 }
 
 

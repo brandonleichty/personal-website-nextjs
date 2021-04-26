@@ -15,6 +15,7 @@ export default function DarkModeToggle({ isMuted }) {
   return (
     <Switch
       checked={enabled}
+      className="sun-moon"
       onChange={() => {
         setEnabled(!enabled);
         setTheme(theme === "dark" ? "light" : "dark");
