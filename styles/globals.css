@@ -163,9 +163,12 @@ section {
   padding-top: 2rem;
 }
 
-.hero-image-wrapper img {
+.hero-image {
   border: solid 10px;
   z-index: 200;
+  width: 240px;
+  height: 240px;
+  border-radius: 9999px;
 }
 
 .tech-stack-icons {
