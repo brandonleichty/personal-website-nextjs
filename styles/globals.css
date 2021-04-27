@@ -261,6 +261,14 @@ nav .burger .burger-lines:before {
   /* transition: opacity 500ms ease 0s; */
 }
 
+.sun-moon {
+  padding-left: 5px;
+}
+
+.audio {
+  padding-left: 10px;
+}
+
 
 @media (min-width: 640px) {
   .hero-image-wrapper {
@@ -271,19 +279,19 @@ nav .burger .burger-lines:before {
     padding-right: 2rem;
     padding-left: 2rem;
   }
-}
 
-.sun-moon, .audio {
-  position: absolute;
-  top: 44px;
-}
-
-.sun-moon {
-  right: 65px
-}
-
-.audio {
-  right: 25px;
+  .sun-moon, .audio {
+    position: absolute;
+    top: 44px;
+  }
+  
+  .sun-moon {
+    right: 65px
+  }
+  
+  .audio {
+    right: 25px;
+  }
 }
 
 @tailwind utilities;
