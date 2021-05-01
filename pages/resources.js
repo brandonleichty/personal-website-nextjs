@@ -12,7 +12,7 @@ export default function Resources() {
           <h1>Resources</h1>
           <div class="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 gap-y-16 text-center">
         <div class="resource-section-heading">
-          <h3 class="mb-3 text-2xl font-medium">Tutorial Sites</h3>
+          <h3 class="mb-3 text-2xl font-medium text-purple dark:text-baby-blue">Tutorial Sites</h3>
           <ul class="space-y-2 dark:text-favWhite">
             <li><a href="https://www.leveluptutorials.com" target="_blank" rel="noopener noreferrer">LevelUp Tutorials</a></li>
             <li><a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">Wes Bos</a></li>
@@ -23,7 +23,7 @@ export default function Resources() {
           </ul>
         </div>
         <div class="resource-section-heading">
-          <h3 class=" mb-3  text-2xl font-medium">YouTube Channels</h3>
+          <h3 class=" mb-3  text-2xl font-medium text-purple dark:text-baby-blue">YouTube Channels</h3>
           <ul class="space-y-2 dark:text-favWhite">
             <li><a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA" target="_blank" rel="noopener noreferrer">fireship.io</a></li>
             <li><a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank" rel="noopener noreferrer">WebDev Simplified</a></li>
@@ -34,7 +34,7 @@ export default function Resources() {
           </ul>
         </div>
         <div class="resource-section-heading">
-          <h3 class="mb-3 text-2xl font-medium">Design Inspiration</h3>
+          <h3 class="mb-3 text-2xl font-medium text-purple dark:text-baby-blue">Design Inspiration</h3>
           <ul class="space-y-2 dark:text-favWhite">
             <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribble</a></li>
             <li><a href="https://klim.co.nz" target="_blank" rel="noopener noreferrer">Klim Type Foundry</a></li>
@@ -42,7 +42,7 @@ export default function Resources() {
           </ul>
         </div>
         <div class="resource-section-heading">
-          <h3 class="mb-3 text-2xl font-medium">Other Resources</h3>
+          <h3 class="mb-3 text-2xl font-medium text-purple dark:text-baby-blue">Other Resources</h3>
           <ul class="space-y-2 dark:text-favWhite">
             <li><a href="https://www.meetup.com/JavaScriptMN/" target="_blank" rel="noopener noreferrer">JavaScript MN Meetup</a></li>
             <li><a href="https://javascriptweekly.com" target="_blank" rel="noopener noreferrer">JavaScript Weekly</a></li>
@@ -54,7 +54,7 @@ export default function Resources() {
           </ul>
         </div>
         <div class="resource-section-heading">
-          <h3 class="mb-3 text-2xl font-medium">Books</h3>
+          <h3 class="mb-3 text-2xl font-medium text-purple dark:text-baby-blue">Books</h3>
           <ul class="space-y-2 dark:text-favWhite">
             <li><a href="https://eloquentjavascript.net" target="_blank" rel="noopener noreferrer">Eloquent JavaScript</a></li>
             <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" rel="noopener noreferrer">You Don't Know JS</a></li>
@@ -69,7 +69,7 @@ export default function Resources() {
           </ul>
         </div>
         <div class="resource-section-heading">
-          <h3 class="mb-3 text-2xl font-medium">Apps & Tools</h3>
+          <h3 class="mb-3 text-2xl font-medium text-purple dark:text-baby-blue">Apps & Tools</h3>
           <ul class="space-y-2 dark:text-favWhite">      
             <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">VSCode</a></li>
             <li><a href="https://tableplus.com" target="_blank" rel="noopener noreferrer">Table Plus</a></li>

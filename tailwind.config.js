@@ -13,7 +13,8 @@ module.exports = {
         "gray":"#8f8f8f",
         "light-gray": "#f7f7f7",
         "white-smoke": "#f7f5f4",
-        "charcoal": "#3e3f3f"
+        "charcoal": "#3e3f3f",
+        "purple": "#6303fe"
       },
       fontFamily: {
         Recoleta: ["Recoleta"],

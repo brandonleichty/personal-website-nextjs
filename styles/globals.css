@@ -152,8 +152,7 @@ section {
 
 .resource-section-heading h3 {
   font-weight: bold;
-  color: #03cffe;
-  /* color: #4603fe; */
+  /* color: #03cffe; */
 }
 
 .hero-image-wrapper {
@@ -203,7 +202,7 @@ nav ul {
 .dark nav .burger .burger-lines:before {
   background-color: #fff;
 }
-
+blue
 nav .burger .burger-lines,
 nav .burger .burger-lines:after,
 nav .burger .burger-lines:before {
