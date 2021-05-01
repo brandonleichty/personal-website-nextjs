@@ -8,7 +8,7 @@ export default function Blog() {
         <title>Brandon Leichty</title>
       </Head>
       <main>
-        <div className="heading">
+        <div className="heading blog">
           <h1>Blog</h1>
         </div>
       </main>
