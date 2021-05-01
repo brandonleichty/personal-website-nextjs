@@ -299,4 +299,15 @@ nav .burger .burger-lines:before {
   }
 }
 
+.desk-image {
+  width: 800px;
+  height: auto;
+}
+
+.desk-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @tailwind utilities;
