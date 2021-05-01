@@ -27,13 +27,13 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/uses">
-              <a>Uses</a>
+            <Link href="/projects">
+              <a>Projects</a>
             </Link>
           </li>
           <li>
-            <Link href="/blog">
-              <a>Blog</a>
+            <Link href="/uses">
+              <a>Uses</a>
             </Link>
           </li>
         </ul>

@@ -38,13 +38,13 @@ function MobileNav({isMuted, setIsMuted}) {
             </Link>
           </li>
           <li>
-            <Link href="/uses">
-              <a onClick={() => setIsOpen(false)}>Uses</a>
+            <Link href="/projects">
+              <a onClick={() => setIsOpen(false)}>Projects</a>
             </Link>
           </li>
           <li>
-            <Link href="/blog">
-              <a onClick={() => setIsOpen(false)}>Blog</a>
+            <Link href="/uses">
+              <a onClick={() => setIsOpen(false)}>Uses</a>
             </Link>
           </li>
           <li>

@@ -145,6 +145,9 @@ section {
 }
 
 .about h1,
+.uses h1,
+.blog h1,
+.projects h1,
 .resources h1 {
   padding-bottom: 4rem;
   padding-top: 8rem;
