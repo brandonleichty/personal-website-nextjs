@@ -30,7 +30,7 @@ export default function Home() {
                     width={1028}
                     height={1028}
                     priority
-                    className="rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
+                    className="hero-img rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
                   />
                 </div>
               </div>
