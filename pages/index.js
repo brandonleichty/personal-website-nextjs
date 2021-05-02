@@ -27,8 +27,8 @@ export default function Home() {
                   <Image
                     src="/images/brandonMin.png"
                     alt="Picture of the author"
-                    width={150}
-                    height={150}
+                    width={300}
+                    height={300}
                     priority
                     className="hero-img rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
                   />
