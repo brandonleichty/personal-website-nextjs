@@ -16,8 +16,8 @@ export default function Uses() {
           <Image
             src="/images/desksetup.jpeg"
             alt="Picture of Brandon's desk setup"
-            width={4032}
-            height={3024}
+            width={960}
+            height={720}
             priority
             className="rounded-lg"
           />
