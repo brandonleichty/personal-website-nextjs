@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import Image from 'next/image'
-
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -9,10 +8,21 @@ export default function About() {
       <Head>
         <title>Brandon Leichty</title>
       </Head>
-      <main className="max-w-3xl mx-auto">
+      <main className="max-w-3xl mx-auto font-medium">
         <div className="heading about">
           <h1>About Brandon</h1>
           <section className="text-lg sm:text-xl">
+            <h3 className="mb-8 mt-10 text-4xl font-bold text-purple dark:text-baby-blue">
+              Long story short...
+            </h3>
+            <p>
+              I'm a web developer, long time Apple employee, and Minnesota born and raised.
+              My current favorite tech stack is Next.js, GraphQL (with Apollo), and Postgres.
+              Hiring? Send me a text or shoot me an email!
+            </p>
+            <h3 className="mb-8 mt-16 text-4xl font-bold text-purple dark:text-baby-blue">
+              Short story long...
+            </h3>
             <p>In 1998 The Legend of Zelda: Ocarina of Time was released.</p>
 
             <p>I was eleven.</p>
@@ -32,14 +42,6 @@ export default function About() {
               JavaScript. In 2019 I completed a full stack JavaScript Techdegree
               through a company called Treehouse — where I learned things such
               as React, NodeJS, AngularJS, Express, Firebase, MongoDB, and more.
-            </p>
-
-            <p>
-              One of the reasons I love JavaScript so much is because it’s
-              always changing. And learning new things is one of my biggest
-              passions. I’m a big reader (50 books in a year is my record) — And
-              there’s always something new to learn in the JavaScript/web world.
-              Whether it be a new framework, paradigm, or best practice.
             </p>
           </section>
         </div>
