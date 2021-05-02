@@ -71,7 +71,6 @@ body {
   padding-right: 20px; */
   padding-left: 2rem;
   padding-right: 2rem;
-
 }
 
 nav ul {
@@ -93,14 +92,9 @@ nav ul li,
 }
 
 footer {
-  padding: 2rem;
+  padding: 10rem 2rem 2rem;
   display: grid;
   place-items: center;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .landing {
@@ -123,7 +117,7 @@ img {
 }
 
 .main-subheading {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 2.25rem;
   font-weight: 500;
   letter-spacing: 0.025em;
@@ -153,7 +147,8 @@ section {
 .projects h1,
 .resources h1 {
   padding-bottom: 4rem;
-  padding-top: 8rem;
+  padding-top: 6rem;
+  overflow: auto;
 }
 
 .resource-section-heading h3 {
@@ -276,6 +271,12 @@ nav .burger .burger-lines:before {
 }
 
 @media (min-width: 640px) {
+
+  .uses-wrapper ul,
+  .grid-container ul {
+    font-size: 1.2rem;
+  }
+
   .hero-image-wrapper {
     padding-top: 4rem;
   }
@@ -283,6 +284,18 @@ nav .burger .burger-lines:before {
     padding-top: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
+  }
+
+  .main-subheading {
+    font-size: 1.8rem;
+  }
+
+  .about h1,
+  .uses h1,
+  .blog h1,
+  .projects h1,
+  .resources h1 {
+    padding-top: 8rem;
   }
 
   .sun-moon,
@@ -314,6 +327,16 @@ nav .burger .burger-lines:before {
 .layout-wrapper {
   max-width: 800px;
   margin: 0px auto;
+}
+
+.uses-wrapper ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+  
+}
+
+.grid-container ul {
+  font-weight: 500;
 }
 
 @tailwind utilities;
