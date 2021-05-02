@@ -62,8 +62,29 @@ export default function Uses() {
               <li>Theme: Retreon</li>
             </ul>
           </div>
+          <div class="resource-section-heading">
+            <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">
+              Backpacks
+            </h3>
+            <ul class="space-y-6 dark:text-favWhite">
+              <li>Topo Klettersack</li>
+              <li>Topo Roverpack</li>
+            </ul>
+          </div>
+          <div className="topo-image-wrapper">
+            <div className="desk-image">
+              <Image
+                src="/images/topo-bags.jpeg"
+                alt="Picture Topo backpacks on Brandon's office wall"
+                width={720}
+                height={960}
+                priority
+                className="rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </main>
-      </div>
+    </div>
   );
 }

@@ -319,7 +319,7 @@ nav .burger .burger-lines:before {
 }
 
 .desk-image {
-  width: 800px;
+  max-width: 720px;
   height: auto;
 }
 
@@ -329,8 +329,15 @@ nav .burger .burger-lines:before {
   justify-content: center;
 }
 
+.topo-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
 .layout-wrapper {
-  max-width: 800px;
+  max-width: 720px;
   margin: 0px auto;
 }
 
