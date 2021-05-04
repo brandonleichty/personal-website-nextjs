@@ -10,7 +10,7 @@ export default function Resources() {
       <main>
         <div className="heading resources">
           <h1>Resources</h1>
-          <div class="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-2 gap-24 gap-y-16 text-left">
+          <div class="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-1 gap-24 gap-y-16 text-center">
         <div class="resource-section-heading">
           <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Tutorial Sites</h3>
           <ul class="space-y-6 dark:text-favWhite">
