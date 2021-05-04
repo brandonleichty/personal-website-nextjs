@@ -168,7 +168,6 @@ section {
   display: grid;
   place-items: center;
   padding-bottom: 1rem;
-  padding-top: 1rem;
 }
 
 .hero-image {
@@ -320,7 +319,6 @@ nav .burger .burger-lines:before {
 
   .hero-image-wrapper {
     padding-bottom: 3rem;
-    padding-top: 0rem;
   }
 
   .uses-wrapper ul,
