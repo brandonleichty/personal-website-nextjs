@@ -168,6 +168,7 @@ section {
   display: grid;
   place-items: center;
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 .hero-image {
@@ -365,6 +366,12 @@ nav .burger .burger-lines:before {
 
   .audio {
     right: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing {
+    height: calc(100vh - 200px);
   }
 }
 
