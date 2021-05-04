@@ -4,11 +4,11 @@ import confetti from "canvas-confetti";
 
 export default function Home() {
   const shootConfetti = () => {
-    // const rect = memoji.getBoundingClientRect();
     confetti({
       particleCount: 100,
       spread: 70,
       origin: { y: 0.4 },
+      colors: ['#6303FE', '#03CFFE']
     });
   };
 
@@ -30,6 +30,7 @@ export default function Home() {
                     height={300}
                     priority
                     className="hero-img rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
+                    onClick={() => shootConfetti()}
                   />
                 </div>
               </div>
