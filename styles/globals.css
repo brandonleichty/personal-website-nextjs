@@ -167,16 +167,19 @@ section {
 .hero-image-wrapper {
   display: grid;
   place-items: center;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   padding-top: 2rem;
 }
 
 .hero-image {
   border: solid 10px;
   z-index: 200;
-  width: 180px;
-  height: 180px;
+  /* width: 180px;
+  height: 180px; */
+  width: 200px;
+  height: 200px;
   border-radius: 9999px;
+  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
 }
 
 .tech-stack-icons {
