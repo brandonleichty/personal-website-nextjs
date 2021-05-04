@@ -116,6 +116,10 @@ img {
   line-height: 1;
 }
 
+.landing h1 {
+  font-size: 4.9rem;
+}
+
 .main-subheading {
   font-size: 1.6rem;
   line-height: 2.25rem;
@@ -167,7 +171,7 @@ section {
 .hero-image-wrapper {
   display: grid;
   place-items: center;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   padding-top: 1rem;
 }
 
@@ -317,6 +321,10 @@ nav .burger .burger-lines:before {
 
 /* Media query start */
 @media (min-width: 640px) {
+
+  .landing h1 {
+    font-size: 4.5rem;
+  }
 
   .hero-image-wrapper {
     padding-bottom: 3rem;
