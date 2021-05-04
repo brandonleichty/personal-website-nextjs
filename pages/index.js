@@ -21,9 +21,8 @@ export default function Home() {
         <section>
           <div className="heading landing">
             <div>
-              <div className="hero-image-wrapper">
+              {/* <div className="hero-image-wrapper">
                 <div className="hero-image">
-                  {/* <img onClick={() => shootConfetti()} src="images/brandonMin.png" className="rounded-full	border-white border-solid w-48 h-48 sm:w-60 sm:h-60"></img> */}
                   <Image
                     src="/images/brandonMin.png"
                     alt="Picture of the author"
@@ -33,7 +32,7 @@ export default function Home() {
                     className="hero-img rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
                   />
                 </div>
-              </div>
+              </div> */}
               <h1>Brandon Leichty</h1>
               <p className="main-subheading">
                 Full Stack JavaScript developer from Minneapolis.
