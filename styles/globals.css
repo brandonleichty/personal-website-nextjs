@@ -122,7 +122,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.025em;
   color: #8f8f8f;
-  max-width: 470px;
+  max-width: 300px;
   /* padding-bottom: 8rem; */
   margin-bottom: 8rem;;
   background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
@@ -278,11 +278,50 @@ nav .burger .burger-lines:before {
   padding-left: 10px;
 }
 
+.desk-image {
+  max-width: 720px;
+  height: auto;
+}
+
+.desk-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topo-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.layout-wrapper {
+  max-width: 720px;
+  margin: 0px auto;
+}
+
+.uses-wrapper ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+  font-weight: 500;
+  
+}
+
+.grid-container ul {
+  font-weight: 500;
+}
+
+/* Media query start */
 @media (min-width: 640px) {
 
   .uses-wrapper ul,
   .grid-container ul {
     font-size: 1.2rem;
+  }
+
+  .main-subheading {
+    max-width: 470px;
   }
 
   .hero-image {
@@ -324,40 +363,6 @@ nav .burger .burger-lines:before {
   .audio {
     right: 25px;
   }
-}
-
-.desk-image {
-  max-width: 720px;
-  height: auto;
-}
-
-.desk-image-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.topo-image-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4rem;
-}
-
-.layout-wrapper {
-  max-width: 720px;
-  margin: 0px auto;
-}
-
-.uses-wrapper ul {
-  list-style-type: disc;
-  margin-left: 1rem;
-  font-weight: 500;
-  
-}
-
-.grid-container ul {
-  font-weight: 500;
 }
 
 @tailwind utilities;
