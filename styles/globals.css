@@ -122,8 +122,16 @@ img {
   font-weight: 500;
   letter-spacing: 0.025em;
   color: #8f8f8f;
-  max-width: 568px;
-  padding-bottom: 8rem;
+  max-width: 470px;
+  /* padding-bottom: 8rem; */
+  margin-bottom: 8rem;;
+  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-weight: 600;
+  margin: 0 auto;
 }
 
 .page-wrapper {
