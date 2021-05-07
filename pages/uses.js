@@ -26,7 +26,7 @@ export default function Uses() {
       <main className="layout-wrapper">
         <div class="uses-wrapper">
           <div class="resource-section-heading">
-            <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">
+            <h3 class="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">
               Desk Setup
             </h3>
             <ul class="space-y-6 dark:text-favWhite">
@@ -42,7 +42,7 @@ export default function Uses() {
             </ul>
           </div>
           <div class="resource-section-heading">
-            <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">
+            <h3 class="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">
               Desktop Apps
             </h3>
             <ul class="space-y-6 dark:text-favWhite">
@@ -53,7 +53,7 @@ export default function Uses() {
             </ul>
           </div>
           <div class="resource-section-heading">
-            <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">
+            <h3 class="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">
               Editor + Terminal
             </h3>
             <ul class="space-y-6 dark:text-favWhite">
@@ -63,7 +63,7 @@ export default function Uses() {
             </ul>
           </div>
           <div class="resource-section-heading">
-            <h3 class="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">
+            <h3 class="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">
               Backpacks
             </h3>
             <ul class="space-y-6 dark:text-favWhite">
