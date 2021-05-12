@@ -92,7 +92,7 @@ nav ul li,
 }
 
 footer {
-  padding: 10rem 2rem 2rem;
+  padding: 10rem 0rem 2rem;
   display: grid;
   place-items: center;
 }
@@ -385,21 +385,20 @@ nav .burger .burger-lines:before {
 
 /* Form CSS START */
 .formkit-submit {
-  background: #1c9afe;
-  background-image: none;
+  /* background: #1c9afe; */
+  background: #6303FE;
   padding: 0.5rem 1rem;
   border-radius: 0px 15px 15px 0px;
   font-weight: bold;
-  background: #6303FE;
-  /* background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE); */
+  box-shadow: 0 0 0 5px #6303FE;
+  margin-left: 5px;
   letter-spacing: 0.5px;
   color: white;
-  transition: all 300ms ease 0s;
+  transition: background 300ms ease 0s;
 }
 
 .formkit-submit:hover {
-  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
-  transition: all 300ms ease 0s;
+  background: #6303FE;
 }
 
 .formkit-input {
@@ -407,7 +406,8 @@ nav .burger .burger-lines:before {
   color: black;
   border-radius: 15px 0px 0px 15px;
   letter-spacing: 0.5px;
-  background: #eee;
+  background-color: transparent;
+  box-shadow: 0 0 0 5px #6303FE;
 }
 
 .formkit-fields {
