@@ -484,4 +484,15 @@ html.dark .short-story-long-button {
   border: solid 6px #03cffe;
 }
 
+@media (max-width: 530px) {
+  .long-story-short-button,
+  .short-story-long-button {
+
+    padding: 0.25rem 1rem;
+    font-size: 1rem;
+
+  }
+
+}
+
 @tailwind utilities;
