@@ -399,6 +399,7 @@ nav .burger .burger-lines:before {
 html.dark .formkit-submit  {
   background: #03cffe;
   box-shadow: 0 0 0 5px #03cffe;
+  color: #111827;
 }
 
 html.dark .formkit-input  {
@@ -423,7 +424,7 @@ html.dark .formkit-input  {
   display: flex;
 }
 
-.formkit-form {
+.embeddable-buttondown-form{
   margin-bottom: 3rem;
 }
 
