@@ -16,7 +16,7 @@ export default function About() {
         <div className="heading about">
           <h1>About Brandon</h1>
           <AboutMeButton longStory={longStory} setLongStory={setLongStory} />
-          <section className="text-lg sm:text-xl">
+          <section className="about-me-text text-lg sm:text-xl">
             {longStory ? (
               <>
                 <p>
@@ -45,14 +45,32 @@ export default function About() {
                 </p>
               </>
             ) : (
-              <p>
-                I'm a web developer, long time Apple employee, and Minnesota
-                born and raised. My current favorite tech stack is Next.js,
-                GraphQL (with Apollo), and Postgres. Hiring? Send me a text or
-                shoot me an email!
-              </p>
+              <>
+                <p>
+                  I'm a full-stack JavaScript developer, long time Apple employee, and Minnesota
+                  native. My current favorite tech stack is Next.js, GraphQL,
+                  and Postgres.
+                </p>
+                <p>
+                  I'm married to the beautiful Annah Leichty, have a cat named
+                  Nala, and enjoy the outdoors.
+                </p>
+                <p>Hiring? Send me a text or shoot me an email!</p>
+              </>
             )}
           </section>
+          <div className="aboutme-image-wrapper">
+            <div className="aboutme-image">
+              <Image
+                src="/images/brandon-salt-flats.jpg"
+                alt="Picture of Brandon with his wife Annah"
+                width={728}
+                height={546}
+                priority
+                className="hero-img rounded-xl"
+              />
+            </div>
+          </div>
         </div>
       </main>
     </>

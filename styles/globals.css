@@ -319,8 +319,16 @@ nav .burger .burger-lines:before {
   font-weight: 500;
 }
 
+.about-me-text {
+  margin-bottom: 2rem;
+}
+
 /* Media query start */
 @media (min-width: 640px) {
+
+  .about-me-text {
+    padding: 0 20px;
+  }
 
   .landing h1 {
     font-size: 4.5rem;
