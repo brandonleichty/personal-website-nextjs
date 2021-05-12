@@ -437,4 +437,29 @@ html.dark .formkit-input  {
   font-size: 1.8rem;
 }
 
+.long-story-short-button {
+  background: white;
+  padding: 0.25rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0px 15px 15px 0px;
+  border: solid 6px #6303fe;
+  color: #6303fe;
+}
+
+.short-story-long-button {
+  background: white;
+  color: #6303fe;
+  padding: 0.25rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 15px 0 0 15px;
+  border: solid 6px #6303fe;
+}
+
+.story-button-active {
+  background: #6303fe;
+  color: white;
+}
+
 @tailwind utilities;
