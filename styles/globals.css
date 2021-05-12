@@ -462,4 +462,26 @@ html.dark .formkit-input  {
   color: white;
 }
 
+html.dark button.story-button-active.long-story-short-button,
+html.dark button.story-button-active.short-story-long-button
+ {
+  background: #03cffe;
+  color: #111827;
+}
+
+
+html.dark .long-story-short-button,
+html.dark .short-story-long-button {
+  background: #111827;
+  color: #03cffe;
+  border: solid 6px #03cffe;
+}
+
+html.dark .long-story-short-button,
+html.dark .short-story-long-button {
+  background: #111827;
+  color: #03cffe;
+  border: solid 6px #03cffe;
+}
+
 @tailwind utilities;
