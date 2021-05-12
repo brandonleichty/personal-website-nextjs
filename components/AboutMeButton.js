@@ -3,7 +3,7 @@ import React from "react";
 export default function AboutMeButton(props) {
   const { longStory, setLongStory } = props;
   return (
-    <div>
+    <div className="mb-24">
       <button
         className={`${
           longStory ? "story-button-active" : null
