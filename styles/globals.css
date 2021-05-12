@@ -385,7 +385,6 @@ nav .burger .burger-lines:before {
 
 /* Form CSS START */
 .formkit-submit {
-  /* background: #1c9afe; */
   background: #6303FE;
   padding: 0.5rem 1rem;
   border-radius: 0px 15px 15px 0px;
@@ -395,6 +394,16 @@ nav .burger .burger-lines:before {
   letter-spacing: 0.5px;
   color: white;
   transition: background 300ms ease 0s;
+}
+
+html.dark .formkit-submit  {
+  background: #1c9afe;
+  box-shadow: 0 0 0 5px #1c9afe;
+}
+
+html.dark .formkit-input  {
+  box-shadow: 0 0 0 5px #1c9afe;
+  color: white;
 }
 
 .formkit-submit:hover {
