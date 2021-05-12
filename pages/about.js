@@ -44,21 +44,29 @@ export default function About() {
                   Express, Firebase, MongoDB, and more.
                 </p>
                 <p>
-                  I'm currently on a Career Experience at Apple (it's like an internship for internal employees) where I'm working as a UX/UI engineer. 
+                  I'm currently on a Career Experience at Apple (it's like an
+                  internship for internal employees) where I'm working as a
+                  UX/UI engineer.
                 </p>
+                <p>Hiring? <em className="highlight">Send me a text or shoot me an email!</em></p>
               </>
             ) : (
               <>
                 <p>
-                  I'm a full-stack JavaScript developer, long time Apple employee, and Minnesota
-                  native. My current favorite tech stack is Next.js, GraphQL,
-                  and Postgres.
+                  I'm a full-stack JavaScript developer, long time Apple
+                  employee, and Minnesota native. My current favorite tech stack
+                  is Next.js, GraphQL, and Postgres.
                 </p>
                 <p>
                   I'm married to the beautiful Annah Leichty, have a cat named
                   Nala, and enjoy the outdoors.
                 </p>
-                <p>Hiring? Send me a text or shoot me an email!</p>
+                <p>
+                  Hiring?{" "}
+                  <em className="highlight">
+                    Send me a text or shoot me an email!
+                  </em>
+                </p>
               </>
             )}
           </section>
