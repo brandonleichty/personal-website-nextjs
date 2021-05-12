@@ -389,8 +389,8 @@ nav .burger .burger-lines:before {
   padding: 0.5rem 1rem;
   border-radius: 0px 15px 15px 0px;
   font-weight: bold;
-  box-shadow: 0 0 0 5px #6303FE;
-  margin-left: 5px;
+  border: solid 5px #6303FE;
+  margin-left: -0.25rem;
   letter-spacing: 0.5px;
   color: white;
   transition: background 300ms ease 0s;
@@ -398,12 +398,12 @@ nav .burger .burger-lines:before {
 
 html.dark .formkit-submit  {
   background: #03cffe;
-  box-shadow: 0 0 0 5px #03cffe;
+  border: solid 5px #03cffe;
   color: #111827;
 }
 
 html.dark .formkit-input  {
-  box-shadow: 0 0 0 5px #03cffe;
+  border: solid 5px #03cffe;
   color: white;
 }
 
@@ -417,7 +417,7 @@ html.dark .formkit-input  {
   border-radius: 15px 0px 0px 15px;
   letter-spacing: 0.5px;
   background-color: transparent;
-  box-shadow: 0 0 0 5px #6303FE;
+  border: solid 5px #6303FE;
 }
 
 .formkit-fields {
