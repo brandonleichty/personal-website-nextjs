@@ -7,7 +7,7 @@ function SubscribeForm() {
       method="post"
       target="popupwindow"
       onsubmit="window.open('https://buttondown.email/brandonleichty', 'popupwindow')"
-      class="embeddable-buttondown-form"
+      className="embeddable-buttondown-form"
     >
       <input type="email" name="email" className="formkit-input" id="bd-email" placeholder="zelda@hyrule.com" />
       <input type="hidden" value="1" name="embed" />
