@@ -397,12 +397,12 @@ nav .burger .burger-lines:before {
 }
 
 html.dark .formkit-submit  {
-  background: #1c9afe;
-  box-shadow: 0 0 0 5px #1c9afe;
+  background: #03cffe;
+  box-shadow: 0 0 0 5px #03cffe;
 }
 
 html.dark .formkit-input  {
-  box-shadow: 0 0 0 5px #1c9afe;
+  box-shadow: 0 0 0 5px #03cffe;
   color: white;
 }
 
