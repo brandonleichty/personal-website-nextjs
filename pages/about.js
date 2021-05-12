@@ -37,11 +37,14 @@ export default function About() {
 
                 <p>
                   If we fast forward to the current year, I’ve now been working
-                  for Apple over 11 years — and have spent the last four years
+                  for Apple over 12 years — and have spent the last four years
                   learning JavaScript. In 2019 I completed a full stack
                   JavaScript Techdegree through a company called Treehouse —
                   where I learned things such as React, NodeJS, AngularJS,
                   Express, Firebase, MongoDB, and more.
+                </p>
+                <p>
+                  I'm currently on a Career Experience at Apple (it's like an internship for internal employees) where I'm working as a UX/UI engineer. 
                 </p>
               </>
             ) : (
