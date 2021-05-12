@@ -383,4 +383,44 @@ nav .burger .burger-lines:before {
   }
 }
 
+/* Form CSS START */
+.formkit-submit {
+  background: #1c9afe;
+  background-image: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0px 15px 15px 0px;
+  font-weight: bold;
+  background: #6303FE;
+  /* background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE); */
+  letter-spacing: 0.5px;
+  color: white;
+  transition: all 300ms ease 0s;
+}
+
+.formkit-submit:hover {
+  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
+  transition: all 300ms ease 0s;
+}
+
+.formkit-input {
+  padding: 0.5rem 1rem;
+  color: black;
+  border-radius: 15px 0px 0px 15px;
+  letter-spacing: 0.5px;
+  background: #eee;
+}
+
+.formkit-fields {
+  display: flex;
+}
+
+.formkit-form {
+  margin-bottom: 3rem;
+}
+
+.outer-form-wrapper {
+  min-height: 40px;
+}
+/* Form CSS END */
+
 @tailwind utilities;
