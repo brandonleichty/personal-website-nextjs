@@ -30,17 +30,6 @@ function Navigation() {
             </Link>
           </li>
           <li>
-            <Link href="/resources">
-              <a
-                className={`${
-                  router.asPath == "/resources" ? "active-link" : ""
-                }`}
-              >
-                Resources
-              </a>
-            </Link>
-          </li>
-          <li>
             <Link href="/projects">
               <a
                 className={`${
@@ -48,6 +37,17 @@ function Navigation() {
                 }`}
               >
                 Projects
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/resources">
+              <a
+                className={`${
+                  router.asPath == "/resources" ? "active-link" : ""
+                }`}
+              >
+                Resources
               </a>
             </Link>
           </li>
