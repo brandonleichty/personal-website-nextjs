@@ -57,21 +57,6 @@ export default function About() {
                   employee, and Minnesota native. My current favorite tech stack
                   is Next.js, GraphQL, and Postgres.
                 </p>
-                <p>
-                  I'm currently on a Career Experience at Apple (it's like an
-                  internship for internal employees) where I'm working as a
-                  UX/UI engineer.
-                </p>
-                <p>
-                  I'm married to the beautiful <a href="https://www.instagram.com/annahleichty/" target="_blank" rel="noopener noreferrer">Annah Leichty</a>, have a cat named
-                  Nala, and enjoy the outdoors.
-                </p>
-                <p>
-                  Hiring?{" "}
-                  <em className="highlight">
-                    Send me a text or shoot me an email!
-                  </em>
-                </p>
               </>
             )}
           </section>
