@@ -8,7 +8,7 @@ export default function Resources() {
         <title>Brandon Leichty</title>
       </Head>
       <main>
-        <div classNameName="heading resources">
+        <div className="heading resources">
           <h1>Resources</h1>
           <div className="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-1 gap-24 gap-y-16 text-center">
         <div className="resource-section-heading">
