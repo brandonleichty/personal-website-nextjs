@@ -1,10 +1,12 @@
 import Switch from "../components/Switch";
-import AudioToggle from '../components/AudioToggle'
+import AudioToggle from "../components/AudioToggle";
 import Link from "next/link";
 import MobileNav from "./MobileNav";
-import {useState} from 'react'
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 function Navigation() {
+  const router = useRouter();
   const [isMuted, setIsMuted] = useState(false);
 
   return (
@@ -13,34 +15,58 @@ function Navigation() {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              <a className={`${router.asPath == "/" ? "active-link" : ""}`}>
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a>About</a>
+              <a
+                className={`${router.asPath == "/about" ? "active-link" : ""}`}
+              >
+                About
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/resources">
-              <a>Resources</a>
+              <a
+                className={`${
+                  router.asPath == "/resources" ? "active-link" : ""
+                }`}
+              >
+                Resources
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/projects">
-              <a>Projects</a>
+              <a
+                className={`${
+                  router.asPath == "/projects" ? "active-link" : ""
+                }`}
+              >
+                Projects
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/uses">
-              <a>Uses</a>
+              <a className={`${router.asPath == "/uses" ? "active-link" : ""}`}>
+                Uses
+              </a>
             </Link>
           </li>
         </ul>
-        <Switch className="theme-switch" isMuted={isMuted}/>
-        <AudioToggle className="audio-toggle" setIsMuted={setIsMuted} isMuted={isMuted}/>
+        <Switch className="theme-switch" isMuted={isMuted} />
+        <AudioToggle
+          className="audio-toggle"
+          setIsMuted={setIsMuted}
+          isMuted={isMuted}
+        />
       </nav>
-      <MobileNav setIsMuted={setIsMuted} isMuted={isMuted}/>
+      <MobileNav setIsMuted={setIsMuted} isMuted={isMuted} />
     </>
   );
 }

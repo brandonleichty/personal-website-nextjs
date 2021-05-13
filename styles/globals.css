@@ -512,4 +512,14 @@ html.dark em.highlight{
   color:#111827;
 }
 
+a.active-link {
+  border-bottom:3px solid #6303FE;
+  color: #6303FE;
+}
+
+html.dark a.active-link {
+  border-bottom:3px solid #03CFFE;
+  color: #03CFFE;
+}
+
 @tailwind utilities;
