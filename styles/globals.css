@@ -81,8 +81,9 @@ nav ul {
   justify-content: center;
 }
 
-nav ul li a {
-  padding: 10px;
+nav a {
+  margin: 10px;
+  padding-bottom: 5px;
 }
 
 nav ul li,
@@ -514,12 +515,12 @@ html.dark em.highlight{
 
 a.active-link {
   border-bottom:3px solid #6303FE;
-  color: #6303FE;
+  /* color: #6303FE; */
 }
 
 html.dark a.active-link {
   border-bottom:3px solid #03CFFE;
-  color: #03CFFE;
+  /* color: #03CFFE; */
 }
 
 @tailwind utilities;
