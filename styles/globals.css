@@ -190,6 +190,13 @@ section {
   height: 200px;
   border-radius: 9999px;
   background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
+  box-shadow:
+  0 1.8px 2.2px rgba(0, 0, 0, 0.02),
+  0 4.3px 5.3px rgba(0, 0, 0, 0.028),
+  0 8.1px 10px rgba(0, 0, 0, 0.035),
+  0 14.5px 17.9px rgba(0, 0, 0, 0.042),
+  0 27.2px 33.4px rgba(0, 0, 0, 0.05),
+  0 65px 80px rgba(0, 0, 0, 0.07);
 }
 
 .tech-stack-icons {
