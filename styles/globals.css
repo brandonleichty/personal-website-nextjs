@@ -130,7 +130,7 @@ img {
   max-width: 300px;
   /* padding-bottom: 8rem; */
   margin-bottom: 8rem;;
-  background-image: linear-gradient(135deg, #6303FE, #03CFFE);
+  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
@@ -189,7 +189,7 @@ section {
   width: 200px;
   height: 200px;
   border-radius: 9999px;
-  background-image: linear-gradient(135deg, #6303FE, #03CFFE);
+  background-image: linear-gradient(135deg, #6303FE 25%, #03CFFE);
 }
 
 .tech-stack-icons {
