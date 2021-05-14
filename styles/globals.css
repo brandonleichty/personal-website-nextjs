@@ -536,7 +536,7 @@ html.dark a.active-link {
   /* color: #03CFFE; */
 }
 
-.grow { transition: all .4s ease-in-out; }
-.grow:hover { transform: scale(0.95); }
+/* .grow { transition: all .4s ease-in-out; }
+.grow:hover { transform: scale(0.95); } */
 
 @tailwind utilities;
