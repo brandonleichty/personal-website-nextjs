@@ -10,6 +10,8 @@ function SubscribeForm() {
         email: event.target.email.value,
       }),
     });
+
+    console.log(res)
   };
   return (
     <form
