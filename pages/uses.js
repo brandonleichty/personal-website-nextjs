@@ -18,7 +18,7 @@ export default function Uses() {
             alt="Picture of Brandon's desk setup"
             width={960}
             height={720}
-            priority
+            priority={true}
             className="rounded-lg"
           />
         </div>
