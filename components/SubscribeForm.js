@@ -1,16 +1,30 @@
 import React from "react";
 
 function SubscribeForm() {
+  const registerUser = async (event) => {
+    event.preventDefault();
+
+    const res = await fetch("http://brandonleichty.com/api/add-subscriber", {
+      method: "POST",
+      body: JSON.stringify({
+        email: event.target.email.value,
+      }),
+    });
+  };
   return (
     <form
-      action="https://buttondown.email/api/emails/embed-subscribe/brandonleichty"
       method="post"
       target="popupwindow"
-      onsubmit="window.open('https://buttondown.email/brandonleichty', 'popupwindow')"
+      onSubmit={registerUser}
       className="embeddable-buttondown-form"
     >
-      <input type="email" name="email" className="formkit-input" id="bd-email" placeholder="zelda@hyrule.com" />
-      <input type="hidden" value="1" name="embed" />
+      <input
+        type="email"
+        name="email"
+        className="formkit-input"
+        id="bd-email"
+        placeholder="zelda@hyrule.com"
+      />
       <input type="submit" className="formkit-submit" value="Hiya!" />
     </form>
   );
