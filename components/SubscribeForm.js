@@ -4,7 +4,7 @@ function SubscribeForm() {
   const registerUser = async (event) => {
     event.preventDefault();
 
-    const res = await fetch("http://brandonleichty.com/api/add-subscriber", {
+    const res = await fetch("/api/add-subscriber", {
       method: "POST",
       body: JSON.stringify({
         email: event.target.email.value,
