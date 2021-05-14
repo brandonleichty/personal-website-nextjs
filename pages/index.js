@@ -22,7 +22,7 @@ export default function Home() {
           <div className="heading landing">
             <div>
               <div className="hero-image-wrapper">
-                <div className="hero-image">
+                <div className="hero-image grow">
                   <Image
                     src="/images/brandon-transparent.png"
                     alt="Picture of the author"
