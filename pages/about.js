@@ -16,7 +16,7 @@ export default function About() {
         <div className="heading about">
           <h1>About Brandon</h1>
           <AboutMeButton longStory={longStory} setLongStory={setLongStory} />
-          <section className="about-me-text text-lg sm:text-xl">
+          <section className="about-me-text sm:text-xl">
             {longStory ? (
               <>
                 <p>
