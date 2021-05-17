@@ -4,8 +4,8 @@ import SubscribeForm from './SubscribeForm'
 function Footer() {
   return (
     <footer className="text-black dark:text-white font-Gilroy font-thin text-gray">
-        <div className="email-form-text font-semibold mb-5 text-center">
-          <p>Few emails. Zero spam.</p>
+        <div className="email-form-text mb-5 text-center">
+          <p>Sign up for my newsletter!</p>
           {/* <p>Stay up to date with me.</p> */}
         </div>
         <SubscribeForm />

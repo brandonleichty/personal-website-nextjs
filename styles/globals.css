@@ -461,7 +461,8 @@ html.dark .formkit-input  {
 /* Form CSS END */
 
 .email-form-text  {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 .long-story-short-button {
