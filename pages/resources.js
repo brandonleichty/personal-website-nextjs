@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Resources() {
   return (
@@ -10,9 +11,22 @@ export default function Resources() {
       <main>
         <div className="heading resources">
           <h1>Resources</h1>
-          <div className="max-w-4xl mx-auto grid-container grid grid-flow-row grid-cols-1 sm:grid-cols-1 gap-24 gap-y-16 text-center">
+          </div>
+          <div className="desk-image-wrapper">
+        <div className="desk-image">
+          <Image
+            src="/images/brandon-studying.jpg"
+            alt="Picture of Brandon's studying JavaScript"
+            width={960}
+            height={720}
+            priority={true}
+            className="rounded-lg"
+          />
+        </div>
+      </div>
+          <div className="uses-wrapper">
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Tutorial Sites</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">Tutorial Sites</h3>
           <ul className="space-y-6 dark:text-favWhite">
             <li><a href="https://www.leveluptutorials.com" target="_blank" rel="noopener noreferrer">LevelUp Tutorials</a></li>
             <li><a href="https://wesbos.com" target="_blank" rel="noopener noreferrer">Wes Bos</a></li>
@@ -23,7 +37,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">YouTube Channels</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">YouTube Channels</h3>
           <ul className="space-y-6 dark:text-favWhite">
             <li><a href="https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA" target="_blank" rel="noopener noreferrer">fireship.io</a></li>
             <li><a href="https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw" target="_blank" rel="noopener noreferrer">WebDev Simplified</a></li>
@@ -34,7 +48,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Other Resources</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">Other Resources</h3>
           <ul className="space-y-6 dark:text-favWhite">
             <li><a href="https://www.meetup.com/JavaScriptMN/" target="_blank" rel="noopener noreferrer">JavaScript MN Meetup</a></li>
             <li><a href="https://javascriptweekly.com" target="_blank" rel="noopener noreferrer">JavaScript Weekly</a></li>
@@ -46,7 +60,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Books</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">Books</h3>
           <ul className="space-y-6 dark:text-favWhite">
             <li><a href="https://eloquentjavascript.net" target="_blank" rel="noopener noreferrer">Eloquent JavaScript</a></li>
             <li><a href="https://github.com/getify/You-Dont-Know-JS" target="_blank" rel="noopener noreferrer">You Don't Know JS</a></li>
@@ -61,7 +75,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Apps & Tools</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">Apps & Tools</h3>
           <ul className="space-y-6 dark:text-favWhite">      
             <li><a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer">VSCode</a></li>
             <li><a href="https://tableplus.com" target="_blank" rel="noopener noreferrer">Table Plus</a></li>
@@ -72,7 +86,7 @@ export default function Resources() {
           </ul>
         </div>
         <div className="resource-section-heading">
-          <h3 className="mb-8 mt-16 text-4xl font-medium text-purple dark:text-baby-blue">Design Inspiration</h3>
+          <h3 className="mb-8 mt-16 text-5xl font-medium text-purple dark:text-baby-blue">Design Inspiration</h3>
           <ul className="space-y-6 dark:text-favWhite">
             <li><a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribble</a></li>
             <li><a href="https://klim.co.nz" target="_blank" rel="noopener noreferrer">Klim Type Foundry</a></li>
@@ -80,7 +94,7 @@ export default function Resources() {
           </ul>
         </div>
       </div>
-    </div>
+    
       </main>
     </>
   );
