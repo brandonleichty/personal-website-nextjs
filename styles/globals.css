@@ -342,12 +342,13 @@ nav .burger .burger-lines:before {
   line-height: 1.75rem;
 }
 
+.uses-wrapper ul,
+  .grid-container ul {
+    font-size: 1.2rem;
+  }
+
 /* Media query start */
 @media (min-width: 640px) {
-
-  .about-me-text {
-    /* padding: 0 20px; */
-  }
 
   .landing h1 {
     font-size: 4.5rem;
@@ -357,10 +358,6 @@ nav .burger .burger-lines:before {
     padding-bottom: 3rem;
   }
 
-  .uses-wrapper ul,
-  .grid-container ul {
-    font-size: 1.2rem;
-  }
 
   .main-subheading {
     max-width: 470px;
