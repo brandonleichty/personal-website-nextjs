@@ -50,9 +50,6 @@ export default function Uses() {
               <li>
                 2021 24" M1 iMac (silver)
               </li>
-              <li>
-                iPhone 12 Pro (silver)
-              </li>
               <li>Logitech MX Master 2S Mouse</li>
             </ul>
           </div>
