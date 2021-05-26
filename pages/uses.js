@@ -64,6 +64,7 @@ export default function Uses() {
               <li>Insomnia</li>
               <li>RunJS</li>
               <li>Sip</li>
+              <li>Hand Mirror</li>
               <li>Cinema 4D</li>
               <li>Figma</li>
               <li>Sketch</li>
