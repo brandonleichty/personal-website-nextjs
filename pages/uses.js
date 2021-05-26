@@ -11,18 +11,7 @@ export default function Uses() {
       <div className="heading uses">
         <h1>Uses</h1>
       </div>
-      <div className="desk-image-wrapper">
-        <div className="desk-image">
-          <Image
-            src="/images/desksetup.jpeg"
-            alt="Picture of Brandon's desk setup"
-            width={960}
-            height={720}
-            priority={true}
-            className="rounded-lg"
-          />
-        </div>
-      </div>
+
       <main className="layout-wrapper">
         <div class="uses-wrapper">
           <div class="resource-section-heading">
@@ -89,6 +78,18 @@ export default function Uses() {
               <li>Topo Klettersack</li>
               <li>Topo Roverpack</li>
             </ul>
+          </div>
+          <div className="desk-image-wrapper">
+            <div className="desk-image">
+              <Image
+                src="/images/M1deskSetup.jpeg"
+                alt="Picture of Brandon's desk setup"
+                width={720}
+                height={960}
+                priority={true}
+                className="rounded-lg"
+              />
+            </div>
           </div>
           <div className="topo-image-wrapper">
             <div className="desk-image">

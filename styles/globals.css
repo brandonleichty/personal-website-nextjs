@@ -304,13 +304,7 @@ nav .burger .burger-lines:before {
   height: auto;
 }
 
-.desk-image-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.topo-image-wrapper {
+.topo-image-wrapper, .desk-image-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
