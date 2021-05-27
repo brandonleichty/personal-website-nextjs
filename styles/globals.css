@@ -436,6 +436,7 @@ html.dark .formkit-input  {
   letter-spacing: 0.5px;
   background-color: transparent;
   border: solid 5px #6303FE;
+  font-weight: 500;
 }
 
 .formkit-fields {
