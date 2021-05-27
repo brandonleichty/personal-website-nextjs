@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 
 function SubscribeForm(props) {
   const { loading, setLoading, setFormMessage } = props;
+  const [emailInputValue, setEmailInputValue] = useState('');
+
+  const onChange = (event) => {
+    setEmailInputValue(event.target.value);
+  };
 
 
   const registerUser = async (event) => {
     setLoading(true);
+    setEmailInputValue('');
     event.preventDefault();
 
     const res = await fetch("/api/add-subscriber", {
@@ -38,6 +44,8 @@ function SubscribeForm(props) {
       <input
         type="email"
         name="email"
+        value={emailInputValue}
+        onChange={onChange}
         className="formkit-input"
         id="bd-email"
         placeholder="zelda@hyrule.com"
