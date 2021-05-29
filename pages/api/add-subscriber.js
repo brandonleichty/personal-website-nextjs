@@ -1,9 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-require('dotenv').config()
-const { format } = require('date-fns');
-const { Client } = require("@notionhq/client")
-const fetch = require('node-fetch');
-
+require("dotenv").config();
+const { format } = require("date-fns");
+const { Client } = require("@notionhq/client");
+const fetch = require("node-fetch");
 
 // Initializing a Notion client
 const notion = new Client({
@@ -14,14 +13,13 @@ const notion = new Client({
 export default async (req, res) => {
   const { email, name } = req.body;
   try {
-    const result = await addButtonDownSubscriber(email, name)
+    const result = await addButtonDownSubscriber(email, name);
     const { status } = result;
     res.status(status).json(result);
   } catch (error) {
     res.status(500).json({ error });
   }
-}
-
+};
 
 async function addButtonDownSubscriber(email, name = "") {
   var notes = name ? `Name: ${name}` : "";
@@ -38,11 +36,10 @@ async function addButtonDownSubscriber(email, name = "") {
         },
         body: JSON.stringify({
           email,
-          notes
-        })
+          notes,
+        }),
       }
-    )
-
+    );
 
     if (buttonDownResponse.status == 201 || buttonDownResponse.status == 200) {
       await addSubscriberToNotionDatabase(email, name);
@@ -50,75 +47,79 @@ async function addButtonDownSubscriber(email, name = "") {
         status: buttonDownResponse.status,
         message: "Success! You've subscribed!",
         email,
-        name
-      }
+        name,
+      };
     } else {
-      const errorMessage = await buttonDownResponse.json()
-      const message = parseButtondownErrorMessage(errorMessage)
+      const errorMessage = await buttonDownResponse.json();
+      const message = parseButtondownErrorMessage(errorMessage);
       return {
         status: buttonDownResponse.status,
         message,
         email,
-        name
-      }
+        name,
+      };
     }
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
 }
 
 function parseButtondownErrorMessage(errorMessage) {
-  const duplcateEmailSubscriber = "That email address"
-  const spammyEmail = "Sorry, our system has previously detected this email"
-  const blankEmail = "This field may not be blank"
+  const duplcateEmailSubscriber = "That email address";
+  const spammyEmail = "Sorry, our system has previously detected this email";
+  const blankEmail = "This field may not be blank";
 
-
-  if (errorMessage[0]?.toLowerCase().includes(duplcateEmailSubscriber.toLowerCase())) {
-    return "The email address you provided is already subscribed."
+  if (
+    errorMessage[0]
+      ?.toLowerCase()
+      .includes(duplcateEmailSubscriber.toLowerCase())
+  ) {
+    return "You're already subscribed! 🥳";
   }
   if (errorMessage[0]?.toLowerCase().includes(spammyEmail.toLowerCase())) {
-    return "There seems to be an issue with the address your provided."
+    return "Oh no! There was an error. ☹️";
   }
-  if (errorMessage?.email[0]?.toLowerCase().includes(blankEmail.toLowerCase())) {
-    return "Oops! No email address was provided."
+  if (
+    errorMessage?.email[0]?.toLowerCase().includes(blankEmail.toLowerCase())
+  ) {
+    return "Oops! No address was provided.";
   }
 
-  return "Oh no! An unknown error occurred."
+  return "Oh no! An unknown error occurred.";
 }
 
-
 async function addSubscriberToNotionDatabase(email, name = "") {
-  const today = format(new Date(), 'yyyy-MM-dd');
+  const today = format(new Date(), "yyyy-MM-dd");
 
   try {
     const newSubscriber = await notion.pages.create({
-      "parent": {
-        "database_id": process.env.NOTION_DATABASE_ID
+      parent: {
+        database_id: process.env.NOTION_DATABASE_ID,
       },
-      "properties": {
-        "Email": {
-          "email": email
+      properties: {
+        Email: {
+          email: email,
         },
         "Date added": {
-          "type": "date",
-          "date": {
-            "start": today
-          }
+          type: "date",
+          date: {
+            start: today,
+          },
         },
-        "Name": {
-          "title": [
+        Name: {
+          title: [
             {
-              "text": {
-                "content": name
-              }
-            }
-          ]
-        }
-      }
-    })
+              text: {
+                content: name,
+              },
+            },
+          ],
+        },
+      },
+    });
     return newSubscriber;
   } catch (error) {
-    console.error(error)
+    console.error(error);
   }
 }
 
@@ -126,7 +127,6 @@ async function addSubscriberToNotionDatabase(email, name = "") {
 // const notion = new Client({
 //   auth: process.env.NOTION_TOKEN,
 // });
-
 
 // // Serverless functions takes a request that has 1. an email adddress, and 2. the subscribers name (optional).
 // export default async (req, res) => {
@@ -145,7 +145,6 @@ async function addSubscriberToNotionDatabase(email, name = "") {
 //     res.status(500).json({ error });
 //   }
 // };
-
 
 // async function addButtonDownSubscriber(email, name = "") {
 //   // This is specially added for the "note" feature of Buttondown. If a subscriber name is provided, a note/string will be added that reads "Name: John Doe"
@@ -178,7 +177,6 @@ async function addSubscriberToNotionDatabase(email, name = "") {
 //     console.error(error)
 //   }
 // }
-
 
 // async function addSubscriberToNotionDatabase(email, name = "") {
 //   const today = format(new Date(), 'yyyy-MM-dd');
