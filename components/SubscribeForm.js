@@ -1,8 +1,9 @@
 import React, { useState, useRef } from "react";
 import confetti from "canvas-confetti";
 
-function SubscribeForm(props) {
-  const { loading, setLoading, setFormMessage } = props;
+function SubscribeForm() {
+  const [loading, setLoading] = useState(false);
+  const [formMessage, setFormMessage] = useState("Sign up for my newsletter!");
   const [emailInputValue, setEmailInputValue] = useState("");
   const inputRef = useRef();
 
@@ -10,13 +11,11 @@ function SubscribeForm(props) {
     setEmailInputValue(event.target.value);
   };
 
- 
-
   const realisticConfetti = () => {
-    const rect = inputRef.current.getBoundingClientRect()
+    const rect = inputRef.current.getBoundingClientRect();
     const count = 200;
     const defaults = {
-      origin: { y: (rect.y / window.innerHeight)},
+      origin: { y: rect.y / window.innerHeight },
       colors: ["#6303FE", "#03CFFE"],
     };
 
@@ -81,24 +80,29 @@ function SubscribeForm(props) {
     setLoading(false);
   };
   return (
-    <form
-      method="post"
-      target="popupwindow"
-      onSubmit={registerUser}
-      className="embeddable-buttondown-form"
-      ref={inputRef}
-    >
-      <input
-        type="email"
-        name="email"
-        value={emailInputValue}
-        onChange={onChange}
-        className="formkit-input"
-        id="bd-email"
-        placeholder="zelda@hyrule.com"
-      />
-      <input type="submit" className="formkit-submit" value="Hiya!" />
-    </form>
+    <div>
+      <div className="email-form-text">
+        {loading ? <p>Processing...</p> : <p>{formMessage}</p>}
+      </div>
+      <form
+        method="post"
+        target="popupwindow"
+        onSubmit={registerUser}
+        className="embeddable-buttondown-form"
+        ref={inputRef}
+      >
+        <input
+          type="email"
+          name="email"
+          value={emailInputValue}
+          onChange={onChange}
+          className="formkit-input"
+          id="bd-email"
+          placeholder="zelda@hyrule.com"
+        />
+        <input type="submit" className="formkit-submit" value="Hiya!" />
+      </form>
+    </div>
   );
 }
 
