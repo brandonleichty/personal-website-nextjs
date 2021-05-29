@@ -93,7 +93,7 @@ nav ul li,
 }
 
 footer {
-  padding: 64px 0px 32px;
+  padding: 128px 0px 32px;
   display: grid;
   place-items: center;
 }
