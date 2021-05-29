@@ -80,7 +80,7 @@ function SubscribeForm() {
     setLoading(false);
   };
   return (
-    <div>
+    <div className="newsletter-signup-wrapper">
       <div className="email-form-text">
         {loading ? <p>Processing...</p> : <p>{formMessage}</p>}
       </div>
