@@ -48,7 +48,12 @@ export default function About() {
                   internship for internal employees) where I'm working as a
                   UX/UI engineer.
                 </p>
-                <p>Hiring? <em className="highlight">Send me a text or shoot me an email!</em></p>
+                <p>
+                  Hiring?{" "}
+                  <em className="highlight">
+                    Send me a text or shoot me an email!
+                  </em>
+                </p>
               </>
             ) : (
               <>
