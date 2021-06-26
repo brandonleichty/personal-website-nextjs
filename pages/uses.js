@@ -88,6 +88,7 @@ export default function Uses() {
                 height={960}
                 priority={true}
                 className="rounded-lg"
+                placeholder="blur"
               />
             </div>
           </div>
@@ -100,6 +101,7 @@ export default function Uses() {
                 height={960}
                 priority
                 className="rounded-lg"
+                placeholder="blur"
               />
             </div>
           </div>

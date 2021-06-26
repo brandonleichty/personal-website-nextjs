@@ -69,11 +69,12 @@ export default function About() {
             <div className="aboutme-image">
               <Image
                 src="/images/brandon-salt-flats.jpg"
-                alt="Picture of Brandon with his wife Annah"
+                alt="Picture of Brandon standing on the salt flats"
                 width={728}
                 height={546}
                 priority
                 className="hero-img rounded-xl"
+                placeholder="blur"
               />
             </div>
           </div>

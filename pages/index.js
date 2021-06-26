@@ -20,6 +20,7 @@ export default function Home() {
                     height={300}
                     priority
                     className="hero-img rounded-full border-white border-solid w-48 h-48 sm:w-60 sm:h-60"
+                    placeholder="blur"
                   />
                 </div>
               </div>

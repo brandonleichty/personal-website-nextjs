@@ -91,6 +91,7 @@ export default function Resources() {
               height={720}
               priority={true}
               className="rounded-lg"
+              placeholder="blur"
             />
           </div>
         </div>
