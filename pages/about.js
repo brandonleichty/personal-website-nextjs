@@ -2,7 +2,9 @@ import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import AboutMeButton from "../components/AboutMeButton";
+import { yearsBetween } from "../utilities/yearsBetween"
 import { useState } from "react";
+import {APPLE_HIRE_DATE, WEB_DEV_JOURNEY_START_DATE} from '../variables/constants'
 
 export default function About() {
   const [longStory, setLongStory] = useState(true);
@@ -37,16 +39,14 @@ export default function About() {
 
                 <p>
                   If we fast forward to the current year, I’ve now been working
-                  for Apple over 12 years — and have spent the last four years
+                  for Apple {yearsBetween(APPLE_HIRE_DATE)} years — and have spent the last {yearsBetween(WEB_DEV_JOURNEY_START_DATE)} years
                   learning JavaScript. In 2019 I completed a full stack
                   JavaScript Techdegree through a company called Treehouse —
                   where I learned things such as React, NodeJS, AngularJS,
                   Express, Firebase, MongoDB, and more.
                 </p>
                 <p>
-                  I'm currently on a Career Experience at Apple (it's like an
-                  internship for internal employees) where I'm working as a
-                  UX/UI engineer.
+                  I'm currently on a UI Engineer at Apple where I work primarily with Vue.
                 </p>
                 <p>
                   Hiring?{" "}
@@ -59,8 +59,7 @@ export default function About() {
               <>
                 <p>
                   I'm a full-stack JavaScript developer, long time Apple
-                  employee, and Minnesota native. My current favorite tech stack
-                  is Next.js, GraphQL, and Postgres.
+                  employee, and Minnesota native. I'm currently a UI Engineer at Apple—where I work primarly with Vue.
                 </p>
               </>
             )}
